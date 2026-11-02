@@ -72,7 +72,7 @@ description: 项目交接：在阶段完成、验收、阻塞、批次边界或�
 
 ## 可选自动提醒
 
-`scripts/handoff_hook.py` 是可选的压缩计数件：`PreCompact(auto)` 计数，`SessionStart(compact)` 在到达阈值时注入一行检查点；不做最终答复强制校验。**默认不安装**，装法与卸载见 [压缩检查点](references/compaction.md)。事件契约仍属实验性，未在真实压缩事件上验证；装不上或不需要时，本技能照常可用，只是不计数。
+`scripts/handoff_hook.py` 是可选的压缩计数件：`PreCompact(auto)` 计数，`SessionStart(compact)` 在到达阈值时注入一行检查点；不做最终答复强制校验。**默认不安装**；装法、状态与关闭见 [压缩检查点](references/compaction.md)，以该页记录的实际状态为准。事件契约仍属实验性，未在真实压缩事件上验证；装不上或不需要时，本技能照常可用，只是不计数。
 
 ## 与现有规范的关系
 
