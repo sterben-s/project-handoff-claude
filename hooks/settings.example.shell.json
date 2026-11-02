@@ -1,0 +1,28 @@
+{
+  "hooks": {
+    "PreCompact": [
+      {
+        "matcher": "auto",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"<PYTHON>\" -X utf8 \"<SKILL_DIR>/scripts/handoff_hook.py\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "matcher": "compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"<PYTHON>\" -X utf8 \"<SKILL_DIR>/scripts/handoff_hook.py\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}
